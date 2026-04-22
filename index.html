@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI for Productivity — Berger Becker Coatings Workshop</title>
+  <meta name="description" content="AI prompts and resources for the Berger Becker Coatings HOD workshop on using AI tools for higher productivity.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+</head>
+<body>
+
+<div class="bg-gradient"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div style="display:flex;align-items:center;gap:16px;">
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <a href="#" class="navbar-brand">
+      <div class="logo-icon">BB</div>
+      AI Prompts — <span>Berger Becker</span>
+    </a>
+  </div>
+  <div class="nav-search">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="Search prompts…" autocomplete="off">
+  </div>
+</nav>
+
+<!-- SIDEBAR -->
+<div class="sidebar-overlay"></div>
+<aside class="sidebar">
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">Workshop</div>
+    <a href="#hero" class="sidebar-link active"><span class="link-icon">🏠</span> Overview</a>
+    <a href="#objectives" class="sidebar-link"><span class="link-icon">🎯</span> Learning Objectives</a>
+    <a href="#prompting-tips" class="sidebar-link"><span class="link-icon">🧠</span> Writing Effective Prompts</a>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">Prompt Library</div>
+    <a href="#writing" class="sidebar-link"><span class="link-icon">✍️</span> AI for Writing</a>
+    <a href="#summarize" class="sidebar-link"><span class="link-icon">📚</span> Summarize & Research</a>
+    <a href="#ideas" class="sidebar-link"><span class="link-icon">💡</span> Ideas & Compare</a>
+    <a href="#deep-research" class="sidebar-link"><span class="link-icon">🔬</span> Deep Research</a>
+    <a href="#presentations" class="sidebar-link"><span class="link-icon">📽️</span> Presentations</a>
+    <a href="#video" class="sidebar-link"><span class="link-icon">🎬</span> Videos & Images</a>
+    <a href="#spreadsheets" class="sidebar-link"><span class="link-icon">📊</span> Spreadsheets</a>
+    <a href="#iterative-spreadsheet" class="sidebar-link"><span class="link-icon">🔄</span> Iterative Sheets</a>
+    <a href="#data-analysis" class="sidebar-link"><span class="link-icon">📈</span> Data Analysis</a>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">Resources</div>
+    <a href="#coding" class="sidebar-link"><span class="link-icon">💻</span> AI for Coding</a>
+    <a href="#tools" class="sidebar-link"><span class="link-icon">🛠️</span> AI Tools Directory</a>
+    <a href="#safety" class="sidebar-link"><span class="link-icon">🛡️</span> Safety & Best Practices</a>
+  </div>
+</aside>
+
+<!-- MAIN CONTENT -->
+<main class="main-content">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-badge">🤖 Workshop Resource Hub</div>
+    <h1>AI Tools for Higher Productivity</h1>
+    <p>Berger Becker Coatings — HOD Training Workshop. Click any prompt to copy it to your clipboard instantly.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="stat-num">50+</div><div class="stat-label">Prompts</div></div>
+      <div class="hero-stat"><div class="stat-num">9</div><div class="stat-label">Categories</div></div>
+      <div class="hero-stat"><div class="stat-num">4 hrs</div><div class="stat-label">Workshop</div></div>
+      <div class="hero-stat"><div class="stat-num">10+</div><div class="stat-label">AI Tools</div></div>
+    </div>
+  </section>
+
+  <!-- LEARNING OBJECTIVES -->
+  <section class="section" id="objectives">
+    <div class="section-header sec-prompts">
+      <div class="section-icon">🎯</div>
+      <div><h2>Learning Objectives</h2><p>What you'll take away from this workshop</p></div>
+    </div>
+    <div class="info-card">
+      <ul>
+        <li>Understand why AI matters for productivity in modern workplaces</li>
+        <li>Use AI effectively to draft emails, letters, and reports faster and more clearly</li>
+        <li>How to write effective prompts for better results from AI tools</li>
+        <li>Use AI for research, idea generation &amp; summarizing docs</li>
+        <li>AI tools for creating PowerPoint presentations and videos</li>
+        <li>Use AI for spreadsheet creation, data summarization and data analysis</li>
+        <li>Responsible use of AI: Protecting confidential data and checking accuracy of AI outputs</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WRITING EFFECTIVE PROMPTS -->
+  <section class="section" id="prompting-tips">
+    <div class="section-header sec-prompts">
+      <div class="section-icon">🧠</div>
+      <div><h2>Writing Effective Prompts</h2><p>The 6-part framework for getting great results from AI</p></div>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num" style="background:rgba(59,130,246,0.15);color:var(--accent);">1</div>
+        <h4>Role</h4>
+        <p>Tell the AI what role it should take.<br><em>"Act like a sr. business analyst"</em></p>
+      </div>
+      <div class="step-card">
+        <div class="step-num" style="background:rgba(168,85,247,0.15);color:var(--accent-purple);">2</div>
+        <h4>Context</h4>
+        <p>Share your situation so AI understands better.<br><em>"I have 30 minutes to review data for a report"</em></p>
+      </div>
+      <div class="step-card">
+        <div class="step-num" style="background:rgba(20,184,166,0.15);color:var(--accent-teal);">3</div>
+        <h4>Task</h4>
+        <p>Clearly state what you want the AI to do.<br><em>"Summarize this data and highlight key trends"</em></p>
+      </div>
+      <div class="step-card">
+        <div class="step-num" style="background:rgba(249,115,22,0.15);color:var(--accent-orange);">4</div>
+        <h4>Example</h4>
+        <p>Share a reference if you have one.<br><em>"Like the monthly executive summary"</em></p>
+      </div>
+      <div class="step-card">
+        <div class="step-num" style="background:rgba(236,72,153,0.15);color:var(--accent-pink);">5</div>
+        <h4>Format</h4>
+        <p>Specify how you want the output.<br><em>"Short bullet points" or "A table with 2 columns"</em></p>
+      </div>
+      <div class="step-card">
+        <div class="step-num" style="background:rgba(34,197,94,0.15);color:var(--accent-green);">6</div>
+        <h4>Tone</h4>
+        <p>Mention the tone you want.<br><em>"Professional but friendly"</em></p>
+      </div>
+    </div>
+    <div class="info-card" style="margin-top:16px;text-align:center;">
+      <h3>👑 Context is King!</h3>
+      <p style="color:var(--text-secondary);font-size:0.9rem;">Remember: Prompting is an iterative process! Refine your prompt to get better results.</p>
+    </div>
+  </section>
+
+  <!-- DYNAMIC PROMPT SECTIONS RENDERED HERE -->
+  <div id="promptSections"></div>
+
+  <!-- AI FOR CODING -->
+  <section class="section" id="coding">
+    <div class="section-header sec-coding">
+      <div class="section-icon">💻</div>
+      <div><h2>AI for Coding & Custom Apps</h2><p>Build custom tools and automate workflows</p></div>
+    </div>
+    <div class="info-card">
+      <h3>🤖 Coding Assistants & IDEs</h3>
+      <ul>
+        <li>Claude.ai (Sonnet 4.6 extended) — Free plan available</li>
+        <li>Cursor — AI-powered IDE</li>
+        <li>Antigravity (Google) — AI coding agent</li>
+        <li>Claude Code (Anthropic) — Terminal coding agent</li>
+        <li>Codex (OpenAI) — Code generation</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>🌐 AI Agents (Real-world Tasks)</h3>
+      <ul>
+        <li>Claude Cowork — Autonomous work assistant</li>
+        <li>Manus Computer — Computer-use agent</li>
+        <li>Perplexity Computer — Research + action agent</li>
+        <li>ChatGPT Agent — Integrated task agent</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>📚 RAG — Retrieval-Augmented Generation</h3>
+      <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:12px;">Upload your own sources to <strong>NotebookLM.google.com</strong> to generate:</p>
+      <ul>
+        <li>Infographics &amp; mind maps</li>
+        <li>Podcasts &amp; video overviews</li>
+        <li>Slides &amp; presentations</li>
+        <li>Quizzes &amp; blog articles</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- AI TOOLS DIRECTORY -->
+  <section class="section" id="tools">
+    <div class="section-header sec-tools">
+      <div class="section-icon">🛠️</div>
+      <div><h2>AI Tools Directory</h2><p>Recommended tools for different tasks</p></div>
+    </div>
+    <div class="info-card">
+      <h3>💭 Thinking & Deep Research</h3>
+      <div class="tools-grid" style="margin-top:12px;">
+        <a href="https://chatgpt.com" target="_blank" class="tool-chip"><span class="tool-icon">🟢</span> ChatGPT</a>
+        <a href="https://gemini.google.com" target="_blank" class="tool-chip"><span class="tool-icon">🔵</span> Gemini</a>
+        <a href="https://perplexity.ai" target="_blank" class="tool-chip"><span class="tool-icon">🟣</span> Perplexity AI</a>
+      </div>
+    </div>
+    <div class="info-card">
+      <h3>📽️ Presentation Creation</h3>
+      <div class="tools-grid" style="margin-top:12px;">
+        <a href="https://claude.ai" target="_blank" class="tool-chip"><span class="tool-icon">🟠</span> Claude AI</a>
+        <a href="https://chatgpt.com" target="_blank" class="tool-chip"><span class="tool-icon">🟢</span> ChatGPT</a>
+        <a href="https://gamma.app" target="_blank" class="tool-chip"><span class="tool-icon">🟡</span> Gamma.app</a>
+      </div>
+    </div>
+    <div class="info-card">
+      <h3>🎬 Video & Image Creation</h3>
+      <div class="tools-grid" style="margin-top:12px;">
+        <a href="https://invideo.io" target="_blank" class="tool-chip"><span class="tool-icon">🎥</span> InVideo</a>
+        <a href="https://heygen.com" target="_blank" class="tool-chip"><span class="tool-icon">🧑</span> HeyGen</a>
+        <a href="https://picstory.ai" target="_blank" class="tool-chip"><span class="tool-icon">🖼️</span> Picstory AI</a>
+        <a href="https://suno.com" target="_blank" class="tool-chip"><span class="tool-icon">🎵</span> Suno (Music)</a>
+      </div>
+    </div>
+    <div class="info-card">
+      <h3>📊 Data Analysis & Spreadsheets</h3>
+      <div class="tools-grid" style="margin-top:12px;">
+        <a href="https://claude.ai" target="_blank" class="tool-chip"><span class="tool-icon">🟠</span> Claude AI</a>
+        <a href="https://chatgpt.com" target="_blank" class="tool-chip"><span class="tool-icon">🟢</span> ChatGPT</a>
+        <a href="https://julius.ai" target="_blank" class="tool-chip"><span class="tool-icon">📈</span> Julius AI</a>
+      </div>
+    </div>
+    <div class="info-card">
+      <h3>📚 Knowledge & RAG</h3>
+      <div class="tools-grid" style="margin-top:12px;">
+        <a href="https://notebooklm.google.com" target="_blank" class="tool-chip"><span class="tool-icon">📓</span> NotebookLM</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAFETY -->
+  <section class="section" id="safety">
+    <div class="section-header sec-safety">
+      <div class="section-icon">🛡️</div>
+      <div><h2>Safety, Accuracy & Best Practices</h2><p>Use AI responsibly and protect your data</p></div>
+    </div>
+    <div class="info-card">
+      <h3>✅ Best Practices</h3>
+      <ul>
+        <li><strong>Protect personal information:</strong> Do not enter client names, phone numbers, photos, Aadhaar or any identifiable details into AI tools.</li>
+        <li><strong>Avoid sharing confidential designs:</strong> Remove part numbers or unique identifiers before entering technical details.</li>
+        <li><strong>Always double-check AI answers:</strong> AI can make mistakes. Use your own judgement for accuracy.</li>
+        <li><strong>Use AI for support, not final decisions:</strong> Critical decisions must follow your organisation policy &amp; guidelines.</li>
+      </ul>
+    </div>
+    <div class="safety-grid">
+      <div class="safety-card danger">
+        <h4>🚫 What NOT to Share</h4>
+        <ul>
+          <li>🔴 Images/drawings of confidential or patented designs</li>
+          <li>🔴 Proprietary designs or specifications</li>
+          <li>🔴 Phone numbers or WhatsApp chats</li>
+          <li>🔴 Internal confidential business documents</li>
+          <li>🔴 Documents with staff names, salaries, or confidential info</li>
+        </ul>
+      </div>
+      <div class="safety-card safe">
+        <h4>✅ What is Generally Safe</h4>
+        <ul>
+          <li>🟢 Fictional examples</li>
+          <li>🟢 Rough notes</li>
+          <li>🟢 SOP steps</li>
+          <li>🟢 General process descriptions</li>
+          <li>🟢 Public information</li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-card" style="margin-top:16px;">
+      <h3>⚠️ AI Hallucinations</h3>
+      <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:12px;">
+        <strong>What are they?</strong> The AI gives an answer that looks correct but is actually wrong or partly made up.<br>
+        <strong>Why it happens:</strong> AI tries to fill missing information or guesses when the prompt is unclear.
+      </p>
+      <ul>
+        <li>Use <strong>Thinking mode</strong> for step-by-step reasoning</li>
+        <li>Ask the AI to <strong>show its sources</strong> or cite references</li>
+        <li><strong>Cross-check</strong> answers with trusted sources or a senior colleague</li>
+        <li>If unsure, <strong>do not use</strong> the AI output for critical decisions</li>
+      </ul>
+    </div>
+  </section>
+
+  <div id="noResults" class="no-results">😕 No prompts found matching your search. Try different keywords.</div>
+
+</main>
+
+<!-- Toast -->
+<div id="toast" class="toast"></div>
+
+<!-- Back to top -->
+<button id="backToTop" class="back-to-top">↑ Back to Top</button>
+
+<!-- Scripts -->
+<script src="prompts-data.js"></script>
+<script>
+// Render all prompt sections dynamically
+(function() {
+  const container = document.getElementById('promptSections');
+  let html = '';
+
+  SECTIONS.forEach(section => {
+    html += `<section class="section" id="${section.id}">`;
+    html += `<div class="section-header ${section.cssClass}">`;
+    html += `<div class="section-icon">${section.icon}</div>`;
+    html += `<div><h2>${section.title}</h2><p>${section.description}</p></div>`;
+    html += `</div>`;
+
+    section.prompts.forEach(p => {
+      html += `<div class="prompt-card">`;
+      html += `<div class="prompt-card-header">`;
+      html += `<h3><span class="card-emoji">${p.emoji}</span> ${p.title}</h3>`;
+      html += `<span class="dept-tag ${p.deptClass}">${p.dept}</span>`;
+      html += `</div>`;
+      html += `<div class="prompt-text">${escapeHtml(p.text)}</div>`;
+      if (p.note) {
+        html += `<div class="prompt-note">💡 ${escapeHtml(p.note)}</div>`;
+      }
+      html += `<button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>`;
+      html += `</div>`;
+    });
+
+    html += `</section>`;
+  });
+
+  container.innerHTML = html;
+
+  function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+})();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
