@@ -1,5 +1,17 @@
 const SECTIONS = [
   {
+    id: "where-ai-helps",
+    title: "Where Can AI Help in Writing?",
+    icon: "🚀",
+    cssClass: "sec-prompts",
+    description: "Start here — tell AI your role and discover how it can help",
+    prompts: [
+      { title: "Discover AI Writing Use Cases for Your Role", emoji: "🎯", dept: "General", deptClass: "dept-general",
+        text: "I am working as <your designation> in a world class coil coatings paint manufacturer based in Goa with a global customer base.\nWhere can AI help me in writing?\nKeep in short.",
+        note: "Replace <your designation> with your actual role, e.g. Production Manager, HR Head, Quality Engineer, etc." }
+    ]
+  },
+  {
     id: "writing",
     title: "AI for Writing",
     icon: "✍️",
