@@ -81,7 +81,9 @@ const SECTIONS = [
     description: "Use AI to compare, brainstorm and improve",
     prompts: [
       { title: "Compare Options", emoji: "⚖️", dept: "Engineering", deptClass: "dept-engineering",
-        text: "Compare these three suppliers and highlight advantages, disadvantages and key differences." },
+        text: "Compare these three suppliers and highlight advantages, disadvantages and key differences.",
+        note: "Download the sample supplier data below and paste it along with this prompt",
+        sampleFile: { url: "sample-data/supplier-comparison.csv", label: "Download Sample Supplier Data (CSV)" } },
       { title: "Generate Ideas for Customer Satisfaction", emoji: "🌟", dept: "Sales", deptClass: "dept-sales",
         text: "Give ten ideas to improve customer satisfaction in a manufacturing company.",
         note: "AI can also help generate ideas for improving delivery performance, product quality, customer communication" },
@@ -144,7 +146,7 @@ const SECTIONS = [
     description: "Create training videos, demos and images",
     prompts: [
       { title: "Safety Training Video", emoji: "🎥", dept: "General", deptClass: "dept-general",
-        text: "Create a safety training video for Berger Becker Coatings, Goa (visit https://www.beckers-group.com/ to understand what they do)",
+        text: "Create a safety training video for <add company name and location/ unit> (visit <enter company website> to understand what they do)",
         note: "Use with invideo.io, heygen.com, or picstory.ai" }
     ]
   },
@@ -198,7 +200,9 @@ const SECTIONS = [
     description: "Analyse data, identify trends, and get actionable insights",
     prompts: [
       { title: "Analyse Operational Data & Identify Trends", emoji: "📊", dept: "General", deptClass: "dept-general",
-        text: "Summarise the key trends from this operational data and suggest 3 actions management should take to improve performance." },
+        text: "Summarise the key trends from this operational data and suggest 3 actions management should take to improve performance.",
+        note: "Download the sample operational dashboard below and upload it along with this prompt",
+        sampleFile: { url: "sample-data/operational-dashboard-sample.xlsx", label: "Download Sample Dashboard (XLSX)" } },
       { title: "Identify Patterns in Production Data", emoji: "🔎", dept: "Production", deptClass: "dept-production",
         text: "Identify any patterns in this monthly production data. Explain the trends in simple language." },
       { title: "Converting Numbers into Insights", emoji: "💡", dept: "Accounts", deptClass: "dept-accounts",

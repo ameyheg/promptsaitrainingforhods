@@ -15,7 +15,7 @@
     <div class="logo-mark">BB</div>
     <div>
       <div class="logo-text">AI Prompt Library</div>
-      <div class="logo-sub">Berger Becker Coatings · Training Session</div>
+      <div class="logo-sub">Training Session</div>
     </div>
   </div>
   <div class="header-right">
@@ -28,7 +28,7 @@
 </header>
 
 <div class="hero">
-  <div class="hero-tag">Live Training · April 2025</div>
+  <div class="hero-tag">Live Training · April 2026</div>
   <h1>Your AI <span>Prompt</span><br>Toolkit</h1>
   <p class="hero-desc">All prompts from today's session in one place. Click <strong style="color:var(--text)">Copy</strong> on any card, then paste directly into ChatGPT, Claude, or Gemini.</p>
 </div>
@@ -267,7 +267,7 @@
 </main>
 
 <footer>
-  Session by <a href="http://ameyhegde.in" target="_blank">Amey Hegde</a> &nbsp;·&nbsp; amey.hegde@gmail.com &nbsp;·&nbsp; +91 90969 38269
+  Session by <a href="http://ameyhegde.in" target="_blank">Amey Hegde</a> &nbsp;·&nbsp; amey.hegde@gmail.com
 </footer>
 
 <!-- Toast -->
@@ -338,12 +338,20 @@ function escapeHtml(text) {
     section.prompts.forEach(p => {
       const rawText = p.text;
       const displayText = escapeHtml(p.text).replace(/\n/g, '<br>');
+      const deptClass = p.deptClass || 'dept-general';
+      const deptName = p.dept || 'General';
 
       html += `<div class="prompt-card" style="--card-accent:var(${catColor})" data-text="${escapeHtml(rawText)}">`;
+      html += `<div class="prompt-card-header">`;
       html += `<div class="prompt-label">${escapeHtml(p.title)}</div>`;
+      html += `<span class="dept-badge ${deptClass}">${escapeHtml(deptName)}</span>`;
+      html += `</div>`;
       html += `<div class="prompt-text">${displayText}</div>`;
       if (p.note) {
         html += `<div class="prompt-note">💡 ${escapeHtml(p.note)}</div>`;
+      }
+      if (p.sampleFile) {
+        html += `<a href="${p.sampleFile.url}" download class="download-btn">⬇ ${escapeHtml(p.sampleFile.label)}</a>`;
       }
       html += `<button class="copy-btn" onclick="copyPrompt(this)">${COPY_SVG} Copy Prompt</button>`;
       html += `</div>`;
